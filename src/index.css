@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    min-height:100vh;
+    padding:20px;
+    color:white;
+    background-color: rgb(9, 15, 35);
+    background-image: linear-gradient(45deg,#6b7985, #050a0d);
+}
+.App{
+    margin:auto auto;
+    max-width:500px;
+    background-color: #202124;
+    border-radius:20px;
+    border:2px solid rgb(0, 0, 0);
+    height:90vh;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    
+}
+.header{
+   
+    padding:4px;
+    text-align:center;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    background-color: rgb(0, 0, 0);
+    width:100%;
+}
+.todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    padding:10px;
+    border-top:2px solid gray;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    width:100%;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+    min-height:30px;
+}
+.main{
+    position: relative;
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.addItem{
+    padding-top:;
+    outline: none;
+    min-height:40px;
+    display: flex;
+    border:2px solid rgb(76, 68, 68);
+}
+.addItem label{
+    font-size:0;
+    position: absolute;
+    left:20000px;
+}
+.addItem input {
+    width:100%;
+    font-weight:500;
+    font-size:1rem;
+    padding:7px;
+    padding:14px 5px;
+}
+.addItem button{
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    place-content: center;
+    width:50px;
+}
+input:active ,input:focus{
+    outline: none;
+}
+
+.addItem button svg{
+    color:white;
+    font-size:1.8rem;
+}
+
+
+button svg:hover{
+    transform: scale(1.1);
+ color:rgb(102, 255, 51);
+}
+input::placeholder{
+    padding:3px;
+    border-radius:5px;
+    background-color: rgb(224, 218, 218);
+}
+.ul{
+ list-style:none;
+}
+.ul li {align-items: center;
+    border:3px solid #202124;
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    box-shadow:1px 2px 8px 1px #202124;
+    background-color: black;
+}
+.flex{
+    align-items: center;
+    display: flex;
+}
+.flex div{
+    font-size:1.2rem;
+    margin-left:15px;
+}
+.flex input{
+    width:30px;
+    height:30px;
+}
+.ul li  svg {
+    font-size:1.4rem;
+}
+.ul li  svg :focus{
+    color:rgb(255, 0, 0);
+    outline: none   ;
+    border:none;
+}
+.ul li  svg:hover{
+    
+    color:rgb(255, 0, 0);
+}
+
+/* ... your existing CSS rules ... */
+.form{}
